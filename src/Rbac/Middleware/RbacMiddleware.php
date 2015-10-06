@@ -3,19 +3,18 @@
 namespace SmartCrowd\Rbac\Middleware;
 
 use Illuminate\Support\Facades\Auth;
-use SmartCrowd\Rbac\Facades\Rbac;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 class RbacMiddleware
 {
     /**
-     * @var Rbac
+     * @var \SmartCrowd\Rbac\Manager
      */
     private $manager;
 
-    public function __construct(Rbac $rbacManager)
+    public function __construct(\Illuminate\Foundation\Application $app)
     {
-        $this->manager = $rbacManager;
+        $this->manager = $app['rbac'];
     }
 
     /**

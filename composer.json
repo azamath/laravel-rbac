@@ -1,6 +1,6 @@
 {
-    "name": "smart-crowd/laravel-rbac",
-    "description": "Laravel RBAC implementation.",
+    "name": "azamath/laravel-rbac",
+    "description": "Laravel RBAC implementation. Forked.",
     "keywords": ["laravel", "RBAC", "ACL", "role-based access control"],
     "license": "MIT",
     "authors": [
